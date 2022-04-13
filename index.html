@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <title>Electron Online</title>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+ <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Electron Online</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Inicio</a></li>
+		 <li><a href="#">Productos</a></li>
+        <li><a href="#">Quienes Somos</a></li>
+        <li><a href="#">Direccion</a></li>
+       
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Registrarse</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav> 
+
+<br/><br/><br/>
+
+<div class="container">
+<div class="row">
+	 <!-- PRIMERA -->
+	 <div class="col-sm-8">
+			<div>
+				<h1>Lista de Productos</h1>
+			</div>
+		<div>
+			<div>
+				<!-- List group-->
+				<ul class="list-group shadow">
+					<!-- list group item-->
+					<li class="list-group-item">
+						<!-- Custom content-->
+						<div class="media align-items-lg-center flex-column flex-lg-row p-3">
+							<div class="media-body order-2 order-lg-1">
+								<h5 class="mt-0 font-weight-bold mb-2">SM-M526BLBKBVO</h5>
+								<p class="font-italic text-muted mb-0 small">Samsung Galaxy M52 color Azul RAM 6GB</p>
+								<div class="d-flex align-items-center justify-content-between mt-1">
+									<h6 class="font-weight-bold my-2">Bs 4,369.00 | 
+										<a href="#" onclick="Agregar(1,'Samsung Galaxy M52 color Azul RAM 6GB','4369.00');return false;">Agregar a la lista</a></h6> 
+									<ul class="list-inline small">
+										<li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+										<li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+										<li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+										<li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+										<li class="list-inline-item m-0"><i class="fa fa-star-o text-gray"></i></li>
+									</ul>
+								</div>
+							</div>
+							<img src="001.jpg" alt="Generic placeholder image" width="200" class="ml-lg-5 order-1 order-lg-2">
+						</div> <!-- End -->
+					</li> <!-- End -->
+					<!-- list group item-->
+					<li class="list-group-item">
+						<!-- Custom content-->
+						<div class="media align-items-lg-center flex-column flex-lg-row p-3">
+							<div class="media-body order-2 order-lg-1">
+								<h5 class="mt-0 font-weight-bold mb-2">SM-M325/BLACK</h5>
+								<p class="font-italic text-muted mb-0 small">Samsung M32 Negro de 128GB RAM 6GB</p>
+								<div class="d-flex align-items-center justify-content-between mt-1">
+									<h6 class="font-weight-bold my-2">Bs 2,759.00  | 
+										<a href="#" onclick="Agregar(2,'Samsung M32 Negro de 128GB RAM 6GB','2759.00');return false;">Agregar a la lista</a></h6>
+									<ul class="list-inline small">
+										<li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+										<li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+										<li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+										<li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+										<li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+									</ul>
+								</div>
+							</div><img src="002.jpg" alt="Generic placeholder image" width="200" class="ml-lg-5 order-1 order-lg-2">
+						</div> <!-- End -->
+					</li> <!-- End -->
+					<!-- list group item -->
+					<li class="list-group-item">
+						<!-- Custom content-->
+						<div class="media align-items-lg-center flex-column flex-lg-row p-3">
+							<div class="media-body order-2 order-lg-1">
+								<h5 class="mt-0 font-weight-bold mb-2">NTH-NX9/CRYSTAL</h5>
+								<p class="font-italic text-muted mb-0 small">Honor 50 - 256GB Crystal RAM 8GB</p>
+								<div class="d-flex align-items-center justify-content-between mt-1">
+									<h6 class="font-weight-bold my-2">Bs 5,569.00 | 
+										<a href="#" onclick="Agregar(3,'Honor 50 - 256GB Crystal RAM 8GB','5569.00');return false;">Agregar a la lista</a></h6>
+									<ul class="list-inline small">
+										<li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+										<li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+										<li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+										<li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+										<li class="list-inline-item m-0"><i class="fa fa-star-o text-gray"></i></li>
+									</ul>
+								</div>
+							</div><img src="003.jpg" alt="Generic placeholder image" width="200" class="ml-lg-5 order-1 order-lg-2">
+						</div> <!-- End -->
+					</li> <!-- End -->
+					<!-- list group item -->
+					<li class="list-group-item">
+						<!-- Custom content-->
+						<div class="media align-items-lg-center flex-column flex-lg-row p-3">
+							<div class="media-body order-2 order-lg-1">
+								<h5 class="mt-0 font-weight-bold mb-2">NEN-LX3/ Azul</h5>
+								<p class="font-italic text-muted mb-0 small">Huawei Nova 8i Azul RAM 6GB</p>
+								<div class="d-flex align-items-center justify-content-between mt-1">
+									<h6 class="font-weight-bold my-2">Bs 2,699  | 
+										<a href="#" onclick="Agregar(4,'Huawei Nova 8i Azul RAM 6GB','2699.00');return false;">Agregar a la lista</a></h6>
+									<ul class="list-inline small">
+										<li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+										<li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+										<li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+										<li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+										<li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+									</ul>
+								</div>
+							</div><img src="004.jpg" alt="Generic placeholder image" width="200" class="ml-lg-5 order-1 order-lg-2">
+						</div> <!-- End -->
+					</li> <!-- End -->
+				</ul> <!-- End -->
+			</div>
+		
+		</div>
+	 </div>
+	 <!-- fin: PRIMERA -->
+	 <!-- SEGUNDA -->
+	<div class="col-sm-4">
+
+						<div>
+
+							<h1 class="jumbotron">Carro de Compras</h1>
+
+							<table id="grid" class="table table-striped">
+								<thead>
+									<tr>
+										<th>Descripcion</th>
+										<th>Cantidad</th>
+										<th>Precio</th>
+										<th>Subtotal</th>
+										<th style="width:80px;">
+
+										</th>
+									</tr>
+									<!--
+									<tr>
+										<th>
+											<input id="name" type="text" class="form-control" />
+										</th>
+										<th>
+											<input id="job" type="text" class="form-control" />
+										</th>
+										<th>
+											<input id="age" type="text" class="form-control" />
+										</th>
+										<th>
+											<button id="btn-add" class="btn btn-default">Add</button>
+										</th>
+									</tr>
+									-->
+								</thead>
+								<tbody></tbody>
+							</table>
+						</div>
+				
+
+
+		 
+	</div>
+	<!-- fin: SEGUNDA -->
+		
+</div><!-- fin: CONTAINER -->
+</div>
+
+
+
+    <script>
+//        window.onload = function () {
+            var localStorageKeyName = 'dataProductos';
+
+            fCargarDelLocalStorage();
+
+			//BOTON Y FORMS ADD
+			/*
+            document.querySelector("#btn-add").addEventListener('click', function () {
+                var name = document.getElementById("name"),
+                    job = document.getElementById("job"),
+                    age = document.getElementById("age");
+
+                // validar
+                if (name.value.length === 0 || job.value.length === 0 || !parseInt(age.value)) return;
+
+                var user = {
+                    name: name.value,
+                    job: job.value,
+                    age: age.value
+                };
+
+                // borrar datos
+                name.value = '';
+                job.value = '';
+                age.value = '';
+
+                // Agregar al local storage
+                fGuardarLocalStorage(user);
+            })
+			*/
+			function Agregar(id,descrip,precio){
+				var producto = {
+                    id: id,
+                    descripcion: descrip,
+                    precio: precio,
+					cantidad: 1
+                };
+				fGuardarLocalStorage(producto);
+			}
+			
+            function fGuardarLocalStorage(obj) {
+                var productos = [],
+                    dataInLocalStorage = localStorage.getItem(localStorageKeyName);
+
+                if (dataInLocalStorage !== null) {
+                    productos = JSON.parse(dataInLocalStorage);
+					//agrego objeto
+					//revisar si ya lo tengo, si lo tengo sumar +1, si no lo tenglo el valor es 1
+					bandera = "no encontrado";
+					productos.forEach(function (x, i) {
+						if (x.id === obj.id){
+							x.cantidad = x.cantidad + 1;
+							bandera = "encontrado";
+						}
+					});
+					if (bandera == "no encontrado") {
+						productos.push(obj);
+					}
+                }
+				
+				
+				//guardo en el storage TODO EL ARRAY
+                localStorage.setItem(localStorageKeyName, JSON.stringify(productos));
+				//cargo para mostrar
+                fCargarDelLocalStorage();
+            }
+
+            function fCargarDelLocalStorage() {
+                var users = [],
+                    dataInLocalStorage = localStorage.getItem(localStorageKeyName),
+                    gridBody = document.querySelector("#grid tbody");
+
+                if (dataInLocalStorage !== null) {
+                    users = JSON.parse(dataInLocalStorage);
+                }
+
+                // dibujar tr en el tbody
+                gridBody.innerHTML = '';
+
+                users.forEach(function (x, i) {
+                    var tr = document.createElement("tr"),
+                        tdId = document.createElement("td"),
+                        tdDescripcion = document.createElement("td"),
+						tdCantidad = document.createElement("td"),
+                        tdPrecio = document.createElement("td"),
+						tdSubtotal = document.createElement("td"),
+						
+						
+                        tdRemove = document.createElement("td"),
+                        btnRemove = document.createElement("button");
+
+                    tdId.innerHTML = x.id;
+                    tdDescripcion.innerHTML = x.descripcion;
+                    tdCantidad.innerHTML = x.cantidad;
+					tdPrecio.innerHTML = x.precio;
+					tdSubtotal.innerHTML = (parseFloat(x.cantidad) * parseFloat(x.precio)).toFixed(2);
+
+                    btnRemove.textContent = 'Eliminar';
+                    btnRemove.className = 'btn btn-xs btn-danger';
+                    btnRemove.addEventListener('click', function(){
+                        fRemover(i);
+                    });
+
+                    tdRemove.appendChild(btnRemove);
+
+                    tr.appendChild(tdDescripcion);
+                    tr.appendChild(tdCantidad);
+                    tr.appendChild(tdPrecio);
+                    tr.appendChild(tdSubtotal);
+					tr.appendChild(tdRemove);
+                    gridBody.appendChild(tr);
+                });
+            }
+
+            function fRemover(index){
+                var users = [],
+                    dataInLocalStorage = localStorage.getItem(localStorageKeyName);
+
+                users = JSON.parse(dataInLocalStorage);
+
+                users.splice(index, 1);
+
+                localStorage.setItem(localStorageKeyName, JSON.stringify(users));
+
+                fCargarDelLocalStorage();
+            }
+  //      }
+		
+
+    </script>
+</body>
+
+</html>
